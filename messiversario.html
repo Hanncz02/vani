@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Messiversario<33</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            outline: 0;
+            box-sizing: border-box;
+            font-family: Georgia, serif;
+        }
+        body {
+            font-family: Georgia, serif;
+            background-color: pink;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+            overflow: hidden;
+            color: #333;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            background: pink;
+        }
+        .love, .si, .no {
+            padding-top: 15%;
+        }
+        .love span {
+            color: red;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            color: red;
+        }
+        a {
+            font-size: 24px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-top: 20px;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+        }
+        #no {
+            color: red;
+            background: #eee;
+            margin-right: 50px;
+        }
+        #no:hover {
+            font-size: 30px;
+            transform: scale(1.2);
+        }
+        #si {
+            color: green;
+            background: #eee;
+        }
+        #si:hover {
+            background: green;
+            color: #fff;
+        }
+        .heart-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: rotate(45deg);
+            animation: fly 5s infinite;
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+        .heart:after {
+            left: 10px;
+            top: 0;
+        }
+        @keyframes fly {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1);
+                opacity: 0;
+            }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img, .gallery video {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.1);
+        }
+        .letter {
+            width: 60%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: left;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="love">
+            <h1>Hola, Vani</h1>
+            <h2>¿Puedo mostrarte algo?</h2>
+            <a id="no" href="#no-section">No</a>
+            <a id="si" href="#si-section">Si</a>
+        </div>
+    </div>
+    <div class="container" id="no-section" style="display:none;">
+        <div class="si">
+            <h2>I am waiting for u until alive</h2>
+            <img src="https://via.placeholder.com/30" alt="Heart"><img src="https://via.placeholder.com/30" alt="Heart"><img src="https://via.placeholder.com/30" alt="Heart">
+        </div>
+    </div>
+    <div class="container" id="si-section" style="display:none;">
+        <div class="heart-container"></div>
+        <div class="letter">
+            <p>Querido Vani,</p>
+            <p>	</p>
+            <p>Sinceramente me esmeré por ésto, y aunque sé que es algo muy basico y algo feito, lo hice en las ultimas dos horas porque quise darte un poco de la esencia de mi ingeniería, y creo que algo mas peculiar que otras niñas en algun momento te han regalado. Te prometo que despues será una página más bonita y dinamica para ti.</p>
+            <p>Hoy celebro contigo diez meses maravillosos de amor y crecimiento juntos. Quiero agradecerte por cada momento compartido, por cada sonrisa, por cada abrazo que ha fortalecido nuestro vínculo. En estos meses, has demostrado ser un compañero excepcional, siempre dispuesto a mejorar y a hacer que nuestra relación sea cada vez más hermosa.</p>
+            <p>A pesar de los altibajos que hemos enfrentado, siempre hemos sabido encontrar la luz en medio de la oscuridad, recordando que nuestro amor es más fuerte que cualquier desafío. Eres mi roca, mi apoyo incondicional, y por eso estoy infinitamente agradecida.</p>
+            <p>Como dijo Harry Styles en una de sus canciones, "Our love will be forever, and if we die, we die together" (Nuestro amor será para siempre, y si morimos, morimos juntos). Esta frase encapsula perfectamente la fuerza de nuestro amor, que trasciende el tiempo y las dificultades.</p>
+            <p>Gracias por ser mi compañero de vida, por amarme de la manera en que lo haces. Estoy emocionada por todo lo que el futuro nos depara, sabiendo que juntos podemos superar cualquier obstáculo que se interponga en nuestro camino.</p>
+        </div>
+        <div class="gallery">
+            <img src="kiss.JPG" alt="Image 1">
+            <img src="us.JPG" alt="Image 2">
+            <video src="video.mp4" controls></video>
+            <img src="guiño.JPG" alt="Image 3">
+            <img src="lentes.jpg" alt="Image 4">
+        </div>
+    </div>
+    <script>
+        document.getElementById('no').onclick = function(event) {
+            event.preventDefault();
+            const noButton = document.getElementById('no');
+
+            const growButton = () => {
+                const newSize = noButton.clientWidth * 1.1;
+                if (newSize < window.innerWidth && newSize < window.innerHeight) {
+                    noButton.style.width = `${newSize}px`;
+                    noButton.style.height = `${newSize}px`;
+                    noButton.style.fontSize = `${parseInt(window.getComputedStyle(noButton).fontSize) * 1.1}px`;
+                    noButton.style.lineHeight = `${newSize}px`;
+                } else {
+                    noButton.innerHTML = "Si";
+                    noButton.id = "si";
+                    noButton.href = "#si-section";
+                    noButton.onclick = document.getElementById('si').onclick;
+                }
+            };
+
+            growButton();
+        };
+
+        document.getElementById('si').onclick = function(event) {
+            event.preventDefault();
+            document.querySelector('.container').style.display = 'none';
+            document.getElementById('si-section').style.display = 'flex';
+            startHeartAnimation();
+        };
+
+        function startHeartAnimation() {
+            const heartContainer = document.querySelector('.heart-container');
+            for (let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.style.left = `${Math.random() * 100}%`;
+                heart.style.animationDelay = `${Math.random() * 5}s`;
+                heartContainer.appendChild(heart);
+            }
+        }
+    </script>
+</body>
+</html>
+
